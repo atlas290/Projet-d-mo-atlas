@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>ATLAS - Restaurant</title><title>ATLAS - Restaurant</title>
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' stroke='%23B87333' stroke-width='6' fill='none'/%3E%3Cpath d='M35 30V70 M30 30V45 C30 48 35 48 35 45 M40 30V45 C40 48 35 48 35 45' stroke='%23B87333' stroke-width='6' stroke-linecap='round'/%3E%3Cpath d='M65 30V70 M60 30V40 C60 45 70 45 70 40 V30' stroke='%23B87333' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
+
+<!-- Balises de partage WhatsApp -->
+  <meta property="og:title" content="ATLAS - Le goût du feu, l'élégance de la table">
+  <meta property="og:description" content="Découvrez notre sélection de mets africains authentiques et de fast-food gastronomique.">
+  <meta property="og:image" content="https://atlas290.github.io/atlas-demo/images/hero.jpg">
+  <meta property="og:type" content="website">
+
+  <meta name="description" content="ATLAS, le goût du feu et de l'élégance. Fast-food et mets africains.">
+  <meta name="description" content="ATLAS, le goût du feu et de l'élégance. Fast-food et mets africains.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <a href="index.html" class="logo-container">
+      <svg class="logo-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="45" stroke="currentColor" stroke-width="2"/>
+        <path d="M35 30V70 M30 30V45 C30 48 35 48 35 45 M40 30V45 C40 48 35 48 35 45" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <path d="M65 30V70 M60 30V40 C60 45 70 45 70 40 V30" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <span class="logo-text">Atlas</span>
+    </a>
+    
+    <a href="panier.html" class="header-cart">
+      Panier
+      <span class="cart-count" id="cart-count">0</span>
+    </a>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <!-- Correction ici : le m a été supprimé -->
+    <img src="images/hero.jpg" alt="Poulet braisé gastronomique ATLAS" class="hero-bg">
+    <div class="hero-content">
+      <h1>Le goût du feu, l'élégance de la table.</h1>
+      <p>Découvrez notre sélection de mets africains authentiques et de fast-food gastronomique. Une expérience culinaire pensée pour vous.</p>
+      <a href="menu.html" class="btn btn-primaire">Découvrir la carte</a>
+    </div>
+  </section>
+
+  <!-- ZONE STICKY : RECHERCHE & RACCOURCIS -->
+  <div class="sticky-nav">
+    <div class="search-container">
+      <div class="search-box">
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" placeholder="Rechercher un plat..." aria-label="Rechercher">
+      </div>
+    </div>
+    
+    <div class="ruban-categories">
+      <a href="menu.html" class="pill active">Tout</a>
+      <a href="menu.html" class="pill">Petit-déjeuner</a>
+      <a href="menu.html" class="pill">Mets Africains</a>
+      <a href="menu.html" class="pill">Fast-Food</a>
+      <a href="menu.html" class="pill">International</a>
+      <a href="menu.html" class="pill">Desserts</a>
+      <a href="menu.html" class="pill">Boissons</a>
+    </div>
+  </div>
+
+  <!-- CATEGORIES -->
+  <section class="section" id="menu">
+    <div class="section-title">
+      <h2>Explorez nos univers</h2>
+    </div>
+    <div class="categories-grid">
+      
+      <a href="menu.html" class="categorie-carte">
+        <img src="images/img-petit-dej.jpg" class="categorie-image" loading="lazy" alt="Petit-déjeuner">
+        <div class="categorie-contenu">
+          <h3>Petit-déjeuner</h3>
+          <span>Pour bien commencer</span>
+        </div>
+      </a>
+
+      <a href="menu.html" class="categorie-carte">
+        <img src="images/img-africain.jpg" class="categorie-image" loading="lazy" alt="Mets Africains">
+        <div class="categorie-contenu">
+          <h3>Mets Africains</h3>
+          <span>Les classiques authentiques</span>
+        </div>
+      </a>
+
+      <a href="menu.html" class="categorie-carte">
+        <img src="images/img-fastfood.jpg" class="categorie-image" loading="lazy" alt="Fast-Food">
+        <div class="categorie-contenu">
+          <h3>Fast-Food</h3>
+          <span>Burger, Tacos, Pizza</span>
+        </div>
+      </a>
+
+      <a href="menu.html" class="categorie-carte">
+        <img src="images/img-international.jpg" class="categorie-image" loading="lazy" alt="International">
+        <div class="categorie-contenu">
+          <h3>International</h3>
+          <span>Un voyage gourmand</span>
+        </div>
+      </a>
+
+      <a href="menu.html" class="categorie-carte">
+        <img src="images/img-dessert.jpg" class="categorie-image" loading="lazy" alt="Desserts">
+        <div class="categorie-contenu">
+          <h3>Desserts</h3>
+          <span>La touche sucrée</span>
+        </div>
+      </a>
+
+      <a href="menu.html" class="categorie-carte">
+        <img src="images/img-boisson.jpg" class="categorie-image" loading="lazy" alt="Boissons">
+        <div class="categorie-contenu">
+          <h3>Boissons</h3>
+          <span>Jus, sodas, cafés</span>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- BARRE FLOTTANTE PANIER -->
+  <div class="barre-panier-flottante" id="barre-panier-flottante">
+    <div class="barre-panier-info">
+      <span id="barre-panier-qte">0 article</span>
+      <span id="barre-panier-total">0 F</span>
+    </div>
+    <a href="panier.html" class="btn btn-primaire" style="height: 44px; padding: 0 24px; font-size: 0.85rem;">Voir le panier</a>
+  </div>
+
+  <script src="script.js"></script><!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-block">
+        <h3>Horaires</h3>
+        <p>Tous les jours<br>08h00 — 18h00</p>
+      </div>
+      
+      <div class="footer-block">
+        <h3>Adresse</h3>
+        <p>Chez Atlas<br>Atlas Studio</p>
+        <p style="margin-top: 8px;">
+          <a href="mailto:atlasstudio216@gmail.com" style="color: var(--accent); text-decoration: underline;">atlasstudio216@gmail.com</a>
+        </p>
+      </div>
+
+      <div class="footer-actions">
+        <a href="https://maps.google.com/?q=Cotonou,Benin" target="_blank" class="btn-footer btn-footer-outline">Itinéraire</a>
+        <a href="tel:+2290167020586" class="btn-footer btn-footer-primaire">Appeler</a>
+        <a href="https://wa.me/2290167020586" target="_blank" class="btn-footer btn-footer-whatsapp">WhatsApp</a>
+      </div>
+
+      <div class="footer-bottom">
+        <p>Maquette de démonstration · Atlas Studio</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
