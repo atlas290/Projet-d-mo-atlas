@@ -1,6 +1,6 @@
 // --- VARIABLES GLOBALES ---
 var panier = JSON.parse(localStorage.getItem('atlas_panier')) || [];
-var numeroWhatsApp = "2290167020586";
+var numeroWhatsApp = "2290143327643";
 
 // Elements Menu
 var grillePlats = document.getElementById('grille-plats');
